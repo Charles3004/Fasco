@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Product Page</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="navbar">
+  <h1 class="logo">FASCO</h1>
+  <nav class="nav-links">
+    <a href="index.html">Home</a>
+    <a href="shop.html">Shop</a>
+    <a href="#">Chanel</a>
+    <a href="#">Prada</a>
+    <a href="#">Casuals</a>
+    <a href="#">Denim</a>
+  </nav>
+</header>
+
+
+  <section class="product-detail">
+    <img src="images/jacket 3.jpeg" alt="Product" class="main-image" />
+    <img src="images/jacket 1.jpeg" alt="Product" class="main-image" />
+    <div class="product-info">
+      <h2>Red Jacket</h2>
+      <p>Category: Women / Jackets</p>
+      <p class="price">#40,000</p>
+      <p>Sizes: <button>S</button> <button>M</button> <button>L</button></p>
+      <p>Colors: <span class="color-swatch" style="background:red;"></span> <span class="color-swatch" style="background:black;"></span></p>
+      <div class="quantity">
+        <button onclick="changeQty(-1)">-</button>
+        <input type="text" id="qty" value="1" />
+        <button onclick="changeQty(1)">+</button>
+      </div>
+      <button class="add-to-cart">Add to Cart</button>
+    </div>
+  </section>
+
+  <section class="feature-banner">
+    <h2>Funky Blazers</h2>
+    <button>Shop Now</button>
+  </section>
+
+  <section class="carousel">
+    <h3>People Also Loved</h3>
+    <div class="carousel-items">
+      <div class="card"><img src="images/jacket 7.jpeg" alt="" /></div>
+      <div class="card"><img src="images/jacket 5.jpeg" alt="" /></div>
+      <div class="card"><img src="images/coat 3.jpeg" alt="" /></div>
+    </div>
+  </section>
+
+  <section class="newsletter">
+    <h3>Subscribe To Our Newsletter</h3>
+    <input type="email" placeholder="Enter your email" />
+    <button>Subscribe</button>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Fasco. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
