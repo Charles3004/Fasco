@@ -6,3 +6,52 @@ function changeQty(amount) {
   if (current < 1) current = 1;
   qtyInput.value = current;
 }
+
+// Cart quantity update
+document.addEventListener('DOMContentLoaded', () => {
+  const quantityInputs = document.querySelectorAll('.cart-table input[type="number"]');
+  quantityInputs.forEach(input => {
+    input.addEventListener('change', updateTotal);
+  });
+
+  const applyBtn = document.querySelector('.cart-summary button');
+  if (applyBtn) {
+    applyBtn.addEventListener('click', applyDiscountCode);
+  }
+});
+
+function updateTotal() {
+  const input = this;
+  const row = input.closest('tr');
+  const price = parseFloat(row.children[1].textContent.replace('$', ''));
+  const totalCell = row.children[3];
+  const qty = parseInt(input.value);
+  totalCell.textContent = `$${(price * qty).toFixed(2)}`;
+}
+
+function applyDiscountCode() {
+  alert("Promo code applied (this is a demo)");
+}
+
+// Confirm code page
+function validateConfirmCode() {
+  const input = document.querySelector('.auth-form input[type="text"]');
+  if (!input.value.trim()) {
+    alert("Please enter the confirmation code.");
+    return false;
+  }
+  alert("Confirmation code accepted (demo)");
+  return true;
+}
+
+// Forgot password page
+function validateResetForm() {
+  const email = document.querySelector('.auth-form input[type="email"]');
+  const pass = document.querySelector('.auth-form input[type="password"]');
+  if (!email.value.trim() || !pass.value.trim()) {
+    alert("Please fill in all fields.");
+    return false;
+  }
+  alert("Password has been reset (demo)");
+  return true;
+}

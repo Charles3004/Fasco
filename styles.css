@@ -135,3 +135,67 @@ footer {
 input[type="range"] {
   width: 100%;
 }
+
+.navbar {
+  padding: 20px;
+  text-align: center;
+  background: #fff;
+}
+.cart-container {
+  padding: 20px;
+}
+.cart-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+.cart-table th, .cart-table td {
+  border: 1px solid #ccc;
+  padding: 10px;
+  text-align: left;
+}
+.cart-img {
+  width: 50px;
+}
+.cart-summary {
+  padding: 10px;
+  background: #f9f9f9;
+}
+.newsletter {
+  text-align: center;
+  padding: 20px;
+  background: #f1f1f1;
+}
+.footer {
+  text-align: center;
+  padding: 15px;
+  background: #ddd;
+}
+.auth-page {
+  display: flex;
+  height: 100vh;
+}
+.auth-container {
+  display: flex;
+  width: 100%;
+}
+.side-image {
+  width: 50%;
+  object-fit: cover;
+}
+.auth-form {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.auth-form input {
+  margin: 10px;
+  padding: 10px;
+  width: 80%;
+}
+.auth-form button {
+  padding: 10px 20px;
+  margin-top: 10px;
+}
