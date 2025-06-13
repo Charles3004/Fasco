@@ -55,3 +55,24 @@ function validateResetForm() {
   alert("Password has been reset (demo)");
   return true;
 }
+
+function login() {
+  const email = document.querySelector('input[type="email"]');
+  const password = document.querySelector('input[type="password"]');
+  if (!email.value || !password.value) {
+    alert("Please enter both email and password.");
+    return;
+  }
+  alert("Login successful (demo)");
+}
+
+function register() {
+  const name = document.querySelector('input[placeholder="Full Name"]');
+  const email = document.querySelector('input[placeholder="Email Address"]');
+  const password = document.querySelector('input[placeholder="Password"]');
+  if (!name.value || !email.value || !password.value) {
+    alert("Please fill in all fields.");
+    return;
+  }
+  alert("Account created successfully (demo)");
+}

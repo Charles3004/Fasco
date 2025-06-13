@@ -2,20 +2,21 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>Confirm Code - FASCO</title>
+  <title>Sign Up - FASCO</title>
   <link rel="stylesheet" href="styles.css" />
+  <script src="script.js" defer></script>
 </head>
 <body class="auth-page">
-    <header class="navbar">
+        <header class="navbar">
       <h1 class="logo">FASCO</h1>
       <nav class="nav-links">
         <a href="index.html">Home</a>
-        <a href="cart.html">Cart</a>
         <a href="checkout.html">Check Out</a>
+        <a href="cart.html">Cart</a>
+        <a href="confirm.html">Confirm</a>
         <a href="forgot.html">Forgot</a>
         <a href="shop.html">Shop</a>
         <a href="signin.html">Sign In</a>
-        <a href="signup.html">Sign Up</a>
         <a href="product.html">Product</a>
         <a href="#">Chanel</a>
         <a href="#">Prada</a>
@@ -23,14 +24,17 @@
         <a href="#">Denim</a>
       </nav>
     </header>
-
   <div class="auth-container">
     <img src="images/Hero 4.jpeg" alt="Model" class="side-image" />
     <div class="auth-form">
       <h1>FASCO</h1>
-      <p>Enter The Confirmation Code</p>
-      <input type="text" placeholder="Confirmation code">
-      <button>Confirm Email</button>
+      <p>Create Account</p>
+      <button class="social-btn">Google</button>
+      <button class="social-btn">Email</button>
+      <input type="text" placeholder="Full Name">
+      <input type="email" placeholder="Email Address">
+      <input type="password" placeholder="Password">
+      <button onclick="register()">Create Account</button>
     </div>
   </div>
 </body>
