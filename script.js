@@ -76,3 +76,20 @@ function register() {
   }
   alert("Account created successfully (demo)");
 }
+
+function resetPassword() {
+  const newPass = document.getElementById('newPassword').value;
+  const confirmPass = document.getElementById('confirmPassword').value;
+
+  if (!newPass || !confirmPass) {
+    alert("Please fill in both fields.");
+    return;
+  }
+
+  if (newPass !== confirmPass) {
+    alert("Passwords do not match.");
+    return;
+  }
+
+  alert("Password reset successful (demo)");
+}
